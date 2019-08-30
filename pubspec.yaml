@@ -16,10 +16,14 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-#  build_runner: ">=0.6.0 <0.11.0"
   built_value: ">=5.0.0 <7.0.0"
   built_value_generator: ">=5.0.0 <7.0.0"
   build_runner: 1.2.8
+  # ⚠️ ⚠️ ⚠️
+  # 增加redux action后需要执行下面的命令，自动更新对应的 *.g.dart 文件
+  # flutter pub pub run build_runner build --delete-conflicting-outputs
+  # *.g.dart 文件类似iOS的分类，用于实现redux相关的具体实现
+
 flutter:
 
   uses-material-design: true
