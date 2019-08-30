@@ -1,0 +1,24 @@
+// **************************************************************************
+// BuiltReduxGenerator
+// **************************************************************************
+
+// ignore_for_file: avoid_classes_with_only_static_members
+// ignore_for_file: annotate_overrides
+
+class _$CounterActions extends CounterActions {
+  factory _$CounterActions() => new _$CounterActions._();
+  _$CounterActions._() : super._();
+
+  final ActionDispatcher<int> increment =
+      new ActionDispatcher<int>('CounterActions-increment');
+
+  @override
+  void setDispatcher(Dispatcher dispatcher) {
+    increment.setDispatcher(dispatcher);
+  }
+}
+
+class CounterActionsNames {
+  static final ActionName<int> increment =
+      new ActionName<int>('CounterActions-increment');
+}
